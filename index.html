@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <form id="surveyForm">
+
+        <h1>Khảo Sát</h1>
+
+        <label for="name">Tên của bạn:</label>
+        <input type="text" id="name" placeholder="Nhập tên">
+
+        <label>Bạn thích học online?</label>
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="online" value="Có">
+                Có
+            </label>
+
+            <label>
+                <input type="radio" name="online" value="Không">
+                Không
+            </label>
+        </div>
+
+        <label>Bạn dùng nền tảng nào?</label>
+
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="platform" value="Zoom">
+                Zoom
+            </label>
+
+            <label>
+                <input type="checkbox" name="platform" value="Meet">
+                Meet
+            </label>
+
+            <label>
+                <input type="checkbox" name="platform" value="Teams">
+                Teams
+            </label>
+        </div>
+
+        <label for="opinion">Ý kiến khác:</label>
+        <textarea id="opinion" placeholder="Nhập ý kiến của bạn"></textarea>
+
+        <div class="button-group">
+            <button type="submit">Gửi</button>
+            <button type="reset" class="delete">Xóa</button>
+        </div>
+
+        <p id="successMessage"></p>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
